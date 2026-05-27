@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>AIA | Asistencia Integral para Adultos</title>
+
+  <meta
+    name="description"
+    content="AIA brinda asistencia administrativa y acompañamiento para adultos mayores. Gestión de pagos, servicios, medicamentos y asistencia personalizada."
+  >
+
+<meta
+  name="keywords"
+  content="adultos mayores, asistencia integral, pagos administrativos, ABL, ARBA, Edenor, Naturgy, medicamentos"
+>
+
+<link
+  rel="icon"
+  type="image/png"
+  href="Professional Logo with Intertwined Silhouettes.png"
+/>
+
+
+<style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#f4f7fc;
+      color:#333;
+      line-height:1.6;
+    }
+
+    /* HEADER */
+
+    header{
+      background:linear-gradient(135deg,#0d47a1,#1565c0);
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      padding:40px 20px;
+    }
+
+    .hero{
+      max-width:1150px;
+      margin:auto;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:50px;
+      align-items:center;
+    }
+
+    /* LOGO */
+
+  .logo{
+  width:140px;
+  height:140px;
+  margin-bottom:35px;
+}
+
+.logo-circle{
+  width:140px;
+  height:140px;
+  border-radius:30px;
+  overflow:hidden;
+  background:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 15px 35px rgba(0,0,0,0.18);
+}
+
+.logo-circle img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+    .logo-text h2{
+      color:white;
+      font-size:28px;
+    }
+
+    .logo-text p{
+      color:#dbe7ff;
+      font-size:14px;
+    }
+
+    /* HERO TEXT */
+
+    .hero h1{
+      font-size:38px;
+      line-height:1.1;
+      color:white;
+      margin-bottom:20px;
+    }
+
+    .hero p{
+      color:#e8eef9;
+      font-size:18px;
+      margin-bottom:30px;
+    }
+
+    .buttons{
+      display:flex;
+      gap:15px;
+      flex-wrap:wrap;
+    }
+
+    .btn-whatsapp{
+      background:#25D366;
+      color:white;
+      text-decoration:none;
+      padding:16px 28px;
+      border-radius:14px;
+      font-weight:bold;
+      transition:.3s;
+      box-shadow:0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    .btn-whatsapp:hover{
+      transform:translateY(-3px);
+    }
+
+    .btn-secondary{
+      background:white;
+      color:#0d47a1;
+      text-decoration:none;
+      padding:16px 28px;
+      border-radius:14px;
+      font-weight:bold;
+    }
+
+    .hero-image img{
+      width:100%;
+      height:550px;
+      object-fit:cover;
+      border-radius:30px;
+      box-shadow:0 15px 35px rgba(0,0,0,0.2);
+    }
+
+    /* GENERAL */
+
+    section{
+      padding:80px 20px;
+    }
+
+    .container{
+      max-width:1150px;
+      margin:auto;
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:50px;
+    }
+
+    .section-title h2{
+      color:#0d47a1;
+      font-size:42px;
+      margin-bottom:10px;
+    }
+
+    .section-title p{
+      color:#666;
+    }
+
+    /* SERVICIOS */
+
+    .services{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:25px;
+    }
+
+    .service-card{
+      background:white;
+      padding:35px;
+      border-radius:25px;
+      box-shadow:0 10px 25px rgba(13,71,161,0.08);
+      border-top:5px solid #1565c0;
+      transition:.3s;
+    }
+
+    .service-card:hover{
+      transform:translateY(-5px);
+    }
+
+    .service-card h3{
+      color:#1565c0;
+      margin-bottom:15px;
+      font-size:22px;
+    }
+
+    .service-card p{
+      color:#555;
+    }
+
+    /* PRESENTACIÓN */
+
+    .presentation{
+      background:white;
+      border-radius:30px;
+      padding:40px;
+      display:grid;
+      grid-template-columns:320px 1fr;
+      gap:40px;
+      align-items:center;
+      box-shadow:0 10px 25px rgba(13,71,161,0.08);
+    }
+
+    .presentation img{
+      width:100%;
+      height:380px;
+      object-fit:cover;
+      border-radius:25px;
+    }
+
+    .presentation h3{
+      color:#0d47a1;
+      font-size:36px;
+      margin-bottom:20px;
+    }
+
+    .presentation p{
+      color:#555;
+      margin-bottom:15px;
+    }
+
+    /* CONTACTO */
+
+    .contact{
+      background:linear-gradient(135deg,#0d47a1,#1565c0);
+      border-radius:30px;
+      padding:60px 30px;
+      text-align:center;
+      color:white;
+    }
+
+    .contact h2{
+      font-size:42px;
+      margin-bottom:15px;
+    }
+
+    .contact p{
+      margin-bottom:30px;
+      color:#e6eeff;
+    }
+
+    /* FOOTER */
+
+    footer{
+      text-align:center;
+      padding:30px;
+      color:#666;
+      font-size:14px;
+    }
+
+    /* WHATSAPP */
+
+    .floating-whatsapp{
+      position:fixed;
+      right:20px;
+      bottom:20px;
+      width:68px;
+      height:68px;
+      border-radius:50%;
+      background:#25D366;
+      color:white;
+      text-decoration:none;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:32px;
+      box-shadow:0 10px 20px rgba(0,0,0,0.18);
+      z-index:999;
+      transition:.3s;
+    }
+
+    .floating-whatsapp:hover{
+      transform:scale(1.08);
+    }
+
+    /* RESPONSIVE */
+
+    @media(max-width:900px){
+
+      .hero{
+        grid-template-columns:1fr;
+      }
+
+      .hero h1{
+        font-size:32px;
+      }
+
+      .services{
+        grid-template-columns:1fr;
+      }
+
+      .presentation{
+        grid-template-columns:1fr;
+      }
+
+      .presentation img{
+        height:320px;
+      }
+
+    }
+
+  </style>
+
+</head>
+<body>
+
+
+
+  <!-- HERO -->
+
+  <header>
+
+    <div class="hero">
+
+      <div>
+
+        <!-- LOGO -->
+
+        <div class="logo">
+
+          <div class="logo-circle">
+
+  <img
+    src="WhatsApp Image 2026-05-27 at 18.58.53.jpeg"
+    alt="Logo AIA"
+  >
+
+</div>
+
+          
+
+        </div>
+
+        <h1>
+          ASISTENCIA INTEGRAL Y GESTIÓN PARA ADULTOS MAYORES
+        </h1>
+
+        <p>
+         
+El objetivo es brindar una asistencia cercana y eficiente, permitiendo que los adultos mayores 
+cuenten con apoyo confiable para resolver sus necesidades diarias con tranquilidad y acompañamiento permanente.
+        </p>
+        
+
+        <div class="buttons">
+
+          <a
+            href="https://wa.me/5491165463144"
+            target="_blank"
+            class="btn-whatsapp"
+          >
+            💬 Consultar por WhatsApp
+          </a>
+
+          <a
+            href="#servicios"
+            class="btn-secondary"
+          >
+            Ver Servicios
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- IMAGEN HERO -->
+
+      <div class="hero-image">
+
+        <img
+          src="Diseño sin título.png"
+          alt="Adultos mayores"
+        >
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <!-- SERVICIOS -->
+
+  <section id="servicios">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>Servicios</h2>
+
+        <p>
+          Atención personalizada y acompañamiento permanente.
+        </p>
+
+      </div>
+
+      <div class="services">
+
+        <div class="service-card">
+
+          <h3>- Gestión y pago de servicios e impuestos</h3>
+
+          <p>
+            Ayuda con pagos de servicios e impuestos como ABL, ARBA, AYSA ,
+            Edenor, Naturgy y otros trámites administrativos.
+          </p>
+
+        </div>
+
+        <div class="service-card">
+
+          <h3>Coordinación y gestión de turnos médicos</h3>
+
+          <p>
+           Altas y bajas de servicios, Compra de medicamentos en farmacias y Entrega de medicamentos y documentación directamente en el domicilio
+          </p>
+
+        </div>
+
+        <div class="service-card">
+
+          <h3>Atención personalizada y de confianza</h3>
+
+          <p>
+        Cada servicio se realiza con absoluta seriedad, 
+        discreción y compromiso, priorizando siempre la comodidad, seguridad y bienestar de cada persona.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PRESENTACIÓN -->
+
+  <section>
+
+    <div class="container">
+
+      <div class="presentation">
+
+        <img
+          src="Foto profesional de presentación corporativa, retrato de mujer con camisa celeste, fondo neutro y limpio, iluminación profesional, estilo corporativo moderno.jpg"
+          alt="Encargada del servicio"
+        >
+
+        <div>
+
+          <h3>Alejandra Marcela</h3>
+
+          <p>
+            Mi compromiso es ofrecer una asistencia integral, responsable y humana, facilitando aquellas 
+            tareas cotidianas que requieren tiempo, organización y dedicación.
+          </p>
+
+          <p>
+           En un mundo donde el tiempo y las gestiones diarias pueden resultar complejas, nace un servicio 
+           pensado para brindar tranquilidad, confianza y acompañamiento personalizado a los adultos mayores y sus familias.
+          </p>
+
+         
+
+          <a
+            href="https://wa.me/5491165463144"
+            target="_blank"
+            class="btn-whatsapp"
+          >
+            💬 Contactar
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACTO -->
+
+  <section>
+
+    <div class="container">
+
+      <div class="contact">
+
+        <h2>¿Necesitás ayuda o más información?</h2>
+
+        <p>
+          Consultanos sin compromiso y encontrá un acompañamiento confiable y personalizado.
+        </p>
+
+        <a
+          href="https://wa.me/5491165463144"
+          target="_blank"
+          class="btn-whatsapp"
+        >
+          💬 Hablar por WhatsApp
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+    © 2026 AIA | Diseño by MSFWeb
+  </footer>
+
+  <!-- BOTÓN FLOTANTE -->
+
+  <a
+    href="https://wa.me/5491165463144"
+    target="_blank"
+    class="floating-whatsapp"
+  >
+    💬
+  </a>
+
+  <script>
+
+    console.log("Sitio cargado correctamente");
+
+  </script>
+
+</body>
+</html>
